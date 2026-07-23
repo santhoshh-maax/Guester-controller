@@ -41,10 +41,10 @@ print("📷 Camera started... Show your hand")
 
 
 def count_fingers(hand_landmarks):
-    tips = [8, 12, 16, 20]
+    tips = [8, 12, 16, 20] # thumb - 4, index - 8, middle - 12, ring - 16, pinky - 20
     fingers = 0
 
-    for tip in tips:
+    for tip in tips: #example index rasied Tip = y=100 Joint = y=160 100 <160 True Finger Count =1
         if hand_landmarks.landmark[tip].y < hand_landmarks.landmark[tip - 2].y:
             fingers += 1
 
@@ -57,7 +57,7 @@ while True:
         print("❌ Failed to capture frame")
         break
 
-    rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) #Convert BGR → RGB
     result = hands.process(rgb)
 
     if result.multi_hand_landmarks:
