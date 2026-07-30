@@ -1,4 +1,5 @@
 # ✋ Hand Gesture Controlled LED System using MediaPipe & ESP32 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-db61a2?style=flat&logo=github-sponsors)](https://github.com/sponsors/santhoshh-maax)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N4N51YFMS9)
 
 A real-time hand gesture recognition system that uses **MediaPipe**, **OpenCV**, and **Python** to detect the number of fingers shown to a webcam and control LEDs connected to an **ESP32** through serial communication.
 
